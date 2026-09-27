@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Checkout form</h1>
+            <p>Enter your billing details and choose a payment method.</p>
+        </header>
+
+        <div>
+            <section>
+                <h2>Billing address</h2>
+                <form id="checkout-form">
+                    <p>
+                        <label for="full-name">Full name *</label>
+                        <input id="full-name" name="fullName" type="text" required>
+                    </p>
+                    <p>
+                        <label for="username">Username * (at least 3 characters)</label>
+                        <input id="username" name="username" type="text" minlength="3" required>
+                    </p>
+                    <p>
+                        <label for="email">Email *</label>
+                        <input id="email" name="email" type="email" required>
+                    </p>
+                    <p>
+                        <label for="address">Address *</label>
+                        <input id="address" name="address" type="text" required>
+                    </p>
+                    <p>
+                        <label for="country">Country *</label>
+                        <select id="country" name="country" required>
+                            <option value="">Choose...</option>
+                            <option value="China">China</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="delivery-date">Preferred delivery date *</label>
+                        <input id="delivery-date" name="deliveryDate" type="date" required>
+                    </p>
+
+                    <label>
+                        <input id="same-address" name="sameAddress" type="checkbox" checked>
+                        Shipping address is the same as my billing address
+                    </label>
+
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <label><input type="radio" name="payment" value="credit" checked> Credit card</label>
+                        <label><input type="radio" name="payment" value="debit"> Debit card</label>
+                        <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+                    </fieldset>
+
+                    <p>
+                        <label for="notes">Order notes (optional)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Anything we should know?"></textarea>
+                    </p>
+                    <button type="button">Continue to checkout</button>
+                    <p id="message" role="alert"></p>
+                </form>
+            </section>
+
+            <aside>
+                <h2>Your cart (3)</h2>
+                <ul>
+                    <li>Notebook <span>$12</span></li>
+                    <li>Pen set <span>$8</span></li>
+                    <li>Bookmark <span>$5</span></li>
+                    <li><strong>Total (USD)</strong> <strong>$25</strong></li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>Static learning example. Submission is added in version 3.</footer>
+    </main>
+</body>
+
+</html>
