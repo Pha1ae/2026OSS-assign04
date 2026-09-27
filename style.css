@@ -1,0 +1,136 @@
+/* 页面和表单区域 */
+body {
+    color: #343a40;
+    background-color: #f8f9fa;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2,
+legend {
+    font-size: 22px;
+}
+
+form {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* 标签、输入框、下拉框、多行文本框 */
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    color: #343a40;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    accent-color: #0d6efd;
+}
+
+.choice {
+    margin: 8px 0;
+}
+
+/* 鼠标悬停和键盘聚焦状态 */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #6c757d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0d6efd;
+    outline: 2px solid #b6d4fe;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: #0d6efd;
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+button:focus-visible {
+    outline: 3px solid #9ec5fe;
+    outline-offset: 2px;
+}
+
+/* 购物车及校验提示 */
+.cart {
+    padding: 0;
+    margin: 16px 0;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.was-validated input:invalid,
+.was-validated select:invalid {
+    border-color: #dc3545;
+}
+
+#message {
+    color: #b02a37;
+    margin-top: 12px;
+}
+
+footer {
+    margin-top: 25px;
+    color: #6c757d;
+    text-align: center;
+    font-size: 14px;
+}
